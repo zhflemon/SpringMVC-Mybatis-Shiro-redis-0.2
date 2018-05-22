@@ -35,8 +35,8 @@ import freemarker.template.TemplateModelException;
 public class APITemplateModel extends WYFTemplateModel {
 
 	@Override
-	@SuppressWarnings({  "unchecked" })
-	protected Map<String, TemplateModel> putValue(Map params)
+	@SuppressWarnings({ })
+	protected Map<String, TemplateModel> putValue(Map<String, TemplateModel> params)
 			throws TemplateModelException {
 		
 		Map<String, TemplateModel> paramWrap = null ;

@@ -1,7 +1,6 @@
 package com.sojson.core.mybatis.page;
 
 public class SimplePage implements Paginable {
-	private static final long serialVersionUID = 1L;
 	public static final int DEF_COUNT = 20;
 
 	public SimplePage() {
@@ -25,8 +24,8 @@ public class SimplePage implements Paginable {
 		}
 		if ((this.pageNo - 1) * this.pageSize >= totalCount) {
 			this.pageNo = totalCount / pageSize;
-			if(this.pageNo==0){
-				this.pageNo = 1 ;
+			if (this.pageNo == 0) {
+				this.pageNo = 1;
 			}
 		}
 	}
@@ -108,8 +107,7 @@ public class SimplePage implements Paginable {
 	public void setPageNo(int pageNo) {
 		this.pageNo = pageNo;
 	}
-	
-	
+
 	protected int filterNo;
 
 	public int getFilterNo() {
@@ -120,7 +118,4 @@ public class SimplePage implements Paginable {
 		this.filterNo = filterNo;
 	}
 
-
-	
-	
 }
